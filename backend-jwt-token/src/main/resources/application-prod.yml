@@ -1,0 +1,14 @@
+
+logging:
+    level:
+        root: INFO
+        com.rquispe.backend: DEBUG
+    pattern:
+        console: "%yellow(%d{yyyy-MM-dd HH:mm:ss.SSS}) %highlight(%-5level) [%thread] %cyan(%logger{36}) - %msg%n"
+
+app:
+    jwt:
+        # HS256 secret must be base64
+        secret: ZmFrZV9mYWtlX2Zha2VfZmFrZV9zZWNyZXRfMzJieXRzX2xvbmcxMjM0NTY=
+        # expiration in milliseconds (10 minutes)
+        expiration-ms: 600000
