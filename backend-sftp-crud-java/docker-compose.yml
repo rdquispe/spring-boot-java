@@ -1,0 +1,7 @@
+services:
+    sftp:
+        container_name: sftp_rodrigo
+        image: atmoz/sftp
+        ports:
+            - "9922:22"
+        command: user:password:1001:123456/out

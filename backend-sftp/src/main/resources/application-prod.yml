@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: backend
+  output:
+    ansi:
+      enabled: always
+  devtools:
+      reload:
+          trigger-file: .reloadtrigger
+
+logging:
+  level:
+    root: INFO
+    com.rdquispe.backend: DEBUG
+  pattern:
+    console: "%yellow(%d{yyyy-MM-dd HH:mm:ss.SSS}) %highlight(%-5level) [%thread] %cyan(%logger{36}) - %msg%n"
+
+sftp:
+  username: user
+  password: password
+  host: localhost
+  port: 9922
+  folder: "/out"
+
+api:
+  prefix: "/arg"
